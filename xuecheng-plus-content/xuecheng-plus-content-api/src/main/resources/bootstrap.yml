@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /content
+  port: 63040
+
+#微服务配置
+spring:
+  application:
+    name: content-service
+
+# 日志文件配置路径
+logging:
+  config: classpath:log4j2-dev.xml
+
+# swagger 接口文档配置
+swagger:
+  title: "学成在线内容管理系统"
+  description: "内容系统管理系统对课程相关信息进行业务管理数据"
+  base-package: com.xuecheng.content # \u626B\u63CF\u7684\u5305\u8DEF\u5F84,\u6839\u636EController\u7C7B\u4E2D\u7684\u6CE8\u89E3\u751F\u6210\u63A5\u53E3\u6587\u6863
+  enabled: true
+  version: 1.0.0
